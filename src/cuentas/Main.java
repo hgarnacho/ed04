@@ -10,6 +10,10 @@ public class Main {
         saldoActual = miCuenta.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
+        operativa_cuenta(miCuenta);	
+    }
+    
+    public static void operativa_cuenta(CCuenta miCuenta) {
         try {
             miCuenta.retirar(2300);
         } catch (Exception e) {
@@ -22,4 +26,5 @@ public class Main {
             System.out.print("Fallo al ingresar");
         }
     }
+    
 }
